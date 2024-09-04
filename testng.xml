@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+  <test  name="Test">
+    <classes>
+      <class name="MainTestRunner"> </class>
+
+<!--                  <class name="LoginModule"> </class>-->
+      <!--            <class name="NavigationModule"> </class>-->
+                  <class name="SideMenuModule"> </class>
+<!--                   <class name="ConnectionModule"> </class>-->
+<!--      <class name="CollectionModule"> </class>-->
+      <!--            <class name="CollectOutLier"> </class>&ndash;&gt;-->
+      <!--            <class name="LogOut"> </class>-->
+      <!--            <class name="ScannerActions"> </class>-->
+      <!--            <class name="SpectraModule"> </class>-->
+      <!--              <class name="SettingModule"> </class>-->
+      <!--            <class name="DifAffiliate"> </class>-->
+
+
+    </classes>
+  </test>
+</suite>

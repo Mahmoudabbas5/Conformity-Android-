@@ -76,6 +76,8 @@ private WebElement HistoryButton;
 // History Btn
 @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id=\"com.neospectra.conformityapp:id/navigation_bar_item_icon_view\"])[2]")
 private WebElement HistoryBtn;
+
+
     //_______________Actions______________________
 
     // Click on Side Menu Btn
@@ -115,5 +117,14 @@ private WebElement HistoryBtn;
 
     public boolean DisconnectMessageIsDisplayed(){ wait.until(ExpectedConditions.visibilityOf(DisconnectMessage));
         return DisconnectMessage.isDisplayed();}
+
+    // Click on Material One
+    public void ClickOnMaterialOne(){clickElement(MaterialOne);}
+
+    // Click on History button
+    public void ClickOnHistoryButton(){clickElement(HistoryButton);}
+
+    // Click On Home Btn
+    public void ClickOnHomeButton(){clickElement(HomeButton);}
 
 }

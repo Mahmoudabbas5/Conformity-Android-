@@ -30,7 +30,7 @@ public class NewMaterialPage extends MethodHandles {
     private WebElement BackToHomePageBtn;
 
     //Material Image
-    @AndroidFindBy(id = "com.neospectra.conformityapp:id/material_name_edit_text")
+    @AndroidFindBy(id = "com.neospectra.conformityapp:id/material_image")
     private WebElement MaterialImageBox;
     //TakePhoto Btn
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/text1\" and @text=\"Take photo\"]")
@@ -42,14 +42,17 @@ public class NewMaterialPage extends MethodHandles {
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/text1\" and @text=\"Choose from Gallery\"]")
     private WebElement ChooseFromGalleryBtn;
     // TakePhotoBtn
-    @AndroidFindBy(id = "\"Shutter\" button")
+    @AndroidFindBy(id = "com.oplus.camera:id/shutter_button")
     private WebElement TakePhotoCamera;
     // Photo Save
     @AndroidFindBy(id = "com.oplus.camera:id/done_button")
     private WebElement SavePhotoCamera;
 
+    @AndroidFindBy(id = "com.oplus.camera:id/done_button")
+    private WebElement CancelSavePhotoCamera;
+
     //.   Next Button
-    @AndroidFindBy(id = "com.neospectra.conformityapp:id/material_name_edit_text")
+    @AndroidFindBy(id = "com.neospectra.conformityapp:id/next_button")
     private WebElement NextButton;
     // Sample NAme
     @AndroidFindBy(id = "com.neospectra.conformityapp:id/sample_name_edit_text")
@@ -93,8 +96,29 @@ public class NewMaterialPage extends MethodHandles {
 @AndroidFindBy(id = "android:id/button1")
 private WebElement DeleteDeleteBtn;
    // SampleCheck Box
-   @AndroidFindBy(id = "(//android.widget.CheckBox[@resource-id=\"com.neospectra.conformityapp:id/chk_measurement\"])[1]")
+   @AndroidFindBy(id = "com.neospectra.conformityapp:id/chk_measurement")
    private WebElement SampleCheckBox;
+   // Sample Arrow
+   @AndroidFindBy(id = "com.neospectra.conformityapp:id/img_arrow")
+   private WebElement SampleArrow;
+   // X axis Cm Btn
+    @AndroidFindBy(id = "com.neospectra.conformityapp:id/cm")
+    private WebElement XaxisCmButton;
+// X axis nm
+    @AndroidFindBy(id = "com.neospectra.conformityapp:id/nm")
+    private WebElement XaxisnmButton;
+    // Yaxis Abs Button
+    @AndroidFindBy(id = "com.neospectra.conformityapp:id/abs")
+    private WebElement YaxisAbsButton;
+    //Yaxis-%
+    @AndroidFindBy(id = "com.neospectra.conformityapp:id/percentage")
+    private WebElement YaxisPercentageButton;
+    // Cancel create Material
+    @AndroidFindBy(id = "android:id/button2")
+    private WebElement CancelCreateModelButton;
+// Finish Create Material
+    @AndroidFindBy(id = "android:id/button2")
+    private WebElement FinishCreateModelButton;
     //--------------------Actions----------------
     //EnterMaterial Name
     public void EnterMaterialName(String MaterialName)
@@ -171,8 +195,33 @@ private WebElement DeleteDeleteBtn;
 
 // Click On Scan Btn
     public void ClickOnScanBtn(){clickElement(ScanBtn);}
+   // Click on cm X ais
+    public void ClickOnXaxiscm(){clickElement(XaxisCmButton);}
+    // Click on nm X ais
+    public void ClickOnXaxisnm(){clickElement(XaxisnmButton);}
+    // Click on Abs Y axis
+    public void ClickOnYaxispAbs(){clickElement(YaxisAbsButton);}
+    // Click on Percentage Y axis
 
+    public void ClickOnYaxisPercentage(){clickElement(YaxisPercentageButton);}
 
+// Click on Add new Sample
+public void ClickOnAddNewSampleBtn(){clickElement(AddNewSampleBtn);}
+    // Click on Sample Check Box
+    public void ClickOnSampleCheckBox(){clickElement(SampleCheckBox);}
+// Click on Delete Btn
+public void ClickOnSampleDeleteBtn(){clickElement(DeleteBtn);}
+    // Click on Cancel Delete
+    public void ClickOnSampleCancelDeleteBtn(){clickElement(CancelDeleteBtn);}
+    //Click on Confirm Delete
+    public void ClickOnSampleConfirmDeleteBtn(){clickElement(DeleteDeleteBtn);}
+// Click on Save Material Btn
+public void ClickOnSaveMaterialBtn(){clickElement(SaveMaterialBtn);}
+    // Click on Cancel create Btn
+    public void ClickOnCancelCreateModelBtn(){clickElement(CancelCreateModelButton);}
+
+    // Click on Finish create Btn
+    public void ClickOnFinishCreateModelBtn(){clickElement(FinishCreateModelButton);}
 
 
 

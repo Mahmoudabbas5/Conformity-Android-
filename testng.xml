@@ -8,13 +8,13 @@
 
 <!--                  <class name="LoginModule"> </class>-->
       <!--            <class name="NavigationModule"> </class>-->
-                  <class name="SideMenuModule"> </class>
+<!--                  <class name="SideMenuModule"> </class>-->
 <!--                   <class name="ConnectionModule"> </class>-->
-<!--      <class name="CollectionModule"> </class>-->
-      <!--            <class name="CollectOutLier"> </class>&ndash;&gt;-->
+<!--      <class name="AddMaterialModule"> </class>-->
+                  <class name="HistoryModule"> </class>-->
       <!--            <class name="LogOut"> </class>-->
       <!--            <class name="ScannerActions"> </class>-->
-      <!--            <class name="SpectraModule"> </class>-->
+<!--                  <class name="ScanModule"> </class>-->
       <!--              <class name="SettingModule"> </class>-->
       <!--            <class name="DifAffiliate"> </class>-->
 
